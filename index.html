@@ -125,12 +125,14 @@
   /* ---------- cards ---------- */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;transition:transform .24s var(--ease),box-shadow .24s,border-color .24s;position:relative;overflow:hidden;transform-style:preserve-3d;will-change:transform}
+  .card{display:flex;flex-direction:column}
+  #services .card .btn{align-self:flex-start;margin-top:auto}
   .card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg);border-color:rgba(255,90,31,.45)}
   .card .glare{position:absolute;inset:0;background:radial-gradient(420px circle at var(--gx,50%) var(--gy,50%),rgba(255,90,31,.1),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
   .card:hover .glare{opacity:1}
   .card .icon{font-size:2.1rem;margin-bottom:14px}
   .card h3{font-size:1.24rem;margin-bottom:9px;letter-spacing:-.2px}
-  .card p{color:var(--muted);font-size:.96rem;margin-bottom:22px}
+  .card p{color:var(--muted);font-size:.96rem;margin-bottom:22px;text-align:justify;hyphens:auto}
   .tag{display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#c2410c;background:var(--accent-soft);padding:6px 13px;border-radius:999px;margin-bottom:14px}
   .tag.soon{color:#8b8fa3;background:#eef0f4}
   /* ---------- apps ---------- */
@@ -191,6 +193,7 @@
   .faq{max-width:780px;margin:0 auto}
   .qa{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:14px;overflow:hidden;transition:box-shadow .25s,border-color .25s}
   .qa.open{box-shadow:var(--shadow);border-color:rgba(255,90,31,.4)}
+  .qa.open .a{max-height:280px}
   .qa button{width:100%;text-align:left;background:none;border:none;padding:22px 26px;font-size:1.03rem;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
   .qa button .pm{color:var(--accent);font-size:1.5rem;line-height:1;flex:none;transition:transform .35s var(--ease)}
   .qa.open button .pm{transform:rotate(45deg)}
