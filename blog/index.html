@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — PixelForge Studio</title>
+<meta name="description" content="Trends explained: what the world is talking about right now, from the PixelForge Studio trends desk.">
+<style>:root{
+    --ink:#191920; --ink2:#2c2c34; --muted:#62626e;
+    --bg:#ffffff; --bg2:#f7f6f4;
+    --card:#ffffff; --line:#ebe9e4;
+    --accent:#ff5a1f; --accent2:#ff8a3d; --accent-soft:rgba(255,90,31,.09);
+    --radius:20px;
+    --shadow:0 18px 44px rgba(25,25,32,.08);
+    --ease:cubic-bezier(.22,.8,.28,1);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;gap:28px;padding:16px 0}
+  .brand{font-weight:800;font-size:1.12rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+  .brand .cube{width:26px;height:26px}
+  .nav-links{display:flex;gap:22px;margin-left:auto}
+  .nav-links a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav-links a:hover,.nav-links a.on{color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;padding:13px 26px;border-radius:999px;box-shadow:0 10px 26px rgba(255,90,31,.35);transition:transform .2s var(--ease)}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-sm{padding:10px 20px;font-size:.9rem}
+  footer{border-top:1px solid var(--line);margin-top:90px;padding:38px 0;color:var(--muted);font-size:.92rem;text-align:center}
+  footer a{color:var(--muted);text-decoration:none;margin:0 8px}
+  footer a:hover{color:var(--accent)}
+  @media(max-width:760px){.nav-links{display:none}}
+
+  .blog-hero{padding:80px 0 30px;text-align:center}
+  .blog-hero h1{font-size:3rem;letter-spacing:-1px;margin-bottom:12px}
+  .blog-hero h1 .g{color:var(--accent)}
+  .blog-hero p{color:var(--muted);font-size:1.1rem;max-width:620px;margin:0 auto}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:50px 0 30px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;transition:transform .24s var(--ease),box-shadow .24s}
+  .pcard:hover{transform:translateY(-7px);box-shadow:0 30px 70px rgba(25,25,32,.13)}
+  .pthumb{min-height:170px;display:flex;align-items:center;justify-content:center}
+  .pthumb span{font-size:3.6rem;filter:drop-shadow(0 10px 20px rgba(0,0,0,.22))}
+  .pbody{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+  .pcat{font-size:.72rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#c2410c;margin-bottom:10px}
+  .pbody h3{font-size:1.18rem;line-height:1.35;margin-bottom:10px}
+  .pbody p{color:var(--muted);font-size:.94rem;margin-bottom:18px;text-align:justify}
+  .pfoot{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+  .pdate{color:var(--muted);font-size:.85rem}
+  .pread{color:var(--accent);font-weight:700;font-size:.92rem}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:620px){.grid{grid-template-columns:1fr}.blog-hero h1{font-size:2.2rem}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-in">
+  <a class="brand" href="../"><svg class="cube" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="12" height="12" rx="2.5" fill="#ff5a1f"/><rect x="18" y="2" width="12" height="12" rx="2.5" fill="#ff8a3d" opacity=".85"/><rect x="2" y="18" width="12" height="12" rx="2.5" fill="#ff8a3d" opacity=".85"/><rect x="18" y="18" width="12" height="12" rx="2.5" fill="#ff5a1f"/></svg>PixelForge Studio</a>
+  <div class="nav-links"><a href="../#services">Services</a><a href="../#apps">Apps</a><a href="../#work">Work</a><a href="../#books">Books</a><a href="../#faq">FAQ</a><a href="./" class="on">Blog</a></div>
+</div></nav>
+<div class="wrap">
+  <div class="blog-hero">
+    <h1>Trends, <span class="g">explained.</span></h1>
+    <p>What the world is searching and talking about right now — movies, sports, money, tech and gaming — broken down in plain words by the PixelForge trends desk.</p>
+  </div>
+  <div class="grid">
+<a class="pcard" href="ev-tax-credit-shake-up.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#fbbf24,#f97316)"><span>🚗</span></div>
+  <div class="pbody">
+    <div class="pcat">Money</div>
+    <h3>EV Tax Credit Shake-Up — What Drivers Must Know</h3>
+    <p>A policy change around EV tax credits has drivers everywhere searching for answers. Here is why it matters and what to keep an eye on.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="wnba-finals-valkyries-opener.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#38bdf8,#6366f1)"><span>🏀</span></div>
+  <div class="pbody">
+    <div class="pcat">Sports</div>
+    <h3>WNBA Finals — Valkyries Take the Opener</h3>
+    <p>An expansion team just stole Game 1 of the WNBA Finals. Here is why this underdog run has the whole league watching.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="claude-controversy-explained.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)"><span>🤖</span></div>
+  <div class="pbody">
+    <div class="pcat">Tech</div>
+    <h3>AI in the Headlines — The Claude Controversy Explained</h3>
+    <p>Claude is at the center of a public AI debate. Here is a plain-English breakdown of what people are arguing about.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="olivia-rodrigo-chappell-roan-collab.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#fb7185,#e11d48)"><span>🎵</span></div>
+  <div class="pbody">
+    <div class="pcat">Entertainment</div>
+    <h3>Olivia Rodrigo x Chappell Roan — The Collab Breaking Pop</h3>
+    <p>Two of pop's biggest names are reportedly joining forces. Here is why fans are losing it.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="champions-league-goal-fests.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#38bdf8,#6366f1)"><span>⚽</span></div>
+  <div class="pbody">
+    <div class="pcat">Sports</div>
+    <h3>Champions League Madness — Goal-Fests Light Up Europe</h3>
+    <p>High-scoring Champions League nights are delivering pure drama. A look at why this week had everyone glued to the screen.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="beekeeper-2-teaser-trailer.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#fb7185,#e11d48)"><span>🎥</span></div>
+  <div class="pbody">
+    <div class="pcat">Entertainment</div>
+    <h3>The Beekeeper 2 Teaser Trailer Is Out Now</h3>
+    <p>The teaser for The Beekeeper 2 just dropped. Here is what it signals for the sequel.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="bitcoin-to-zero-searches.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#fbbf24,#f97316)"><span>₿</span></div>
+  <div class="pbody">
+    <div class="pcat">Money</div>
+    <h3>"Bitcoin to Zero" Searches Hit All-Time High</h3>
+    <p>Searches asking whether Bitcoin is going to zero just hit an all-time high. What the panic — and the data — actually say.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="spider-man-brand-new-day.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#fb7185,#e11d48)"><span>🕷️</span></div>
+  <div class="pbody">
+    <div class="pcat">Entertainment</div>
+    <h3>Spider-Man: Brand New Day — The Box-Office Chatter</h3>
+    <p>Eye-popping box-office figures are being shared for Spider-Man: Brand New Day. Separating the chatter from the confirmed numbers.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+<a class="pcard" href="gta-vi-trailer.html">
+  <div class="pthumb" style="background:linear-gradient(135deg,#4ade80,#0ea5e9)"><span>🎮</span></div>
+  <div class="pbody">
+    <div class="pcat">Gaming</div>
+    <h3>GTA VI Trailer — Breaking the Internet</h3>
+    <p>The GTA VI trailer is pulling numbers most launches can only dream of. Why this one broke the internet.</p>
+    <div class="pfoot"><span class="pdate">October 19, 2026</span><span class="pread">Read →</span></div>
+  </div>
+</a>
+
+  </div>
+</div>
+<footer><div class="wrap">© 2026 PixelForge Studio — Apps. Books. Visuals. Automation.<br>
+<a href="https://www.facebook.com/61595106672521" target="_blank" rel="noopener">Facebook</a> ·
+<a href="https://wa.me/923052796967" target="_blank" rel="noopener">WhatsApp</a> ·
+<a href="../">Home</a></div></footer>
+</body>
+</html>
